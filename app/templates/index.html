@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/static/skeleton/css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="/static/skeleton/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="container" style="padding-top:150px;">
+		<form method=post enctype=multipart/form-data id="form" class="center-me">
+			<label>Voice ~</label>
+	    	<audio controls class="player" id="audio_player">
+			  <source id="audio_source" src="#" type="audio/wav">
+			  Your browser does not support the audio element.
+			</audio>
+			<label>No voice ~</label>
+			<audio controls class="player" id="audio_player_no_voice">
+			  <source id="audio_source_no_voice" src="#" type="audio/wav">
+			  Your browser does not support the audio element.
+			</audio>
+			<br>
+			<button class="button button-primary" id="button">Select file</button> <br>
+			<button class="button " type=button id="convert" style="display: none;" >Convert</button> 
+			<a  id="download" class="button " style="display: none;" href="" download>Click to Download</a>
+			<div id="name"></div>
+			<input type=file name=file id="file" style="display: none;" >
+		</form>
+	</div>
+</div>
+</body>
+<script src="/static/scripts.js"></script>
+</html>

@@ -1,0 +1,13 @@
+.container {
+  height: 100%;
+  display: grid;
+}
+.center-me {
+  margin: auto;
+}
+.button {
+	width: 240px;
+}
+.player {
+  width: 240px;
+}
